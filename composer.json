@@ -2,7 +2,7 @@
     "name": "transbank/webpay-magento2-rest",
     "description": "Plugin oficial de magento2 para Webpay Rest",
     "require": {
-        "transbank/transbank-sdk": "1.5.1"
+        "transbank/transbank-sdk": "dev-feat/add-rest-support"
     },
     "type": "magento2-module",
     "version": "3.2.3",
