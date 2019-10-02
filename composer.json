@@ -1,15 +1,24 @@
 {
     "name": "transbank/webpay-magento2-rest",
     "description": "Plugin oficial de magento2 para Webpay Rest",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/TransbankDevelopers/transbank-plugin-utils"
+        }
+    ],
     "require": {
-        "transbank/transbank-sdk": "dev-feat/add-rest-support"
+        "transbank/transbank-sdk": "dev-feat/add-rest-support",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "transbank/plugins-utils": "dev-develop"
     },
     "type": "magento2-module",
     "version": "3.2.3",
     "extra": {
         "map": [
             [
-                "*",
+                "src/*",
                 "Transbank/Webpay"
             ]
         ]
@@ -17,7 +26,7 @@
     "archive": {
         "exclude": [
             "/docs",
-            "/docker-magento2",
+            "/docker-magento2*",
             "/package.sh",
             "/.travis.yml",
             "/.gitignore",

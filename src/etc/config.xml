@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <transbank_webpay_rest>
+                <active>1</active>
+                <model>Transbank\WebpayRest\Model\WebpayRest</model>
+                <title>WebpayRest</title>
+                <alospecific>0</alospecific>
+                <security_parameter>
+                    <commerce_code>597055555532</commerce_code>
+                    <api_key>579B532A7440BB0C9079DED94D31EA1615BACEB56610332264630D42D0A36B1C</api_key>
+                    <environment>TEST</environment>
+                    <successfully_pay>complete</successfully_pay>
+                    <error_pay>canceled</error_pay>
+                    <order_status>pending</order_status>
+                </security_parameter>
+            </transbank_webpay_rest>
+        </payment>
+    </default>
+</config>
